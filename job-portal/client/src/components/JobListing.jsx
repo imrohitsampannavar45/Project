@@ -120,7 +120,7 @@ const JobListing = () => {
                             <img src={assets.left_arrow_icon} alt="Previous Page" />
                         </a>
                         {Array.from({ length: Math.ceil(filteredJobs.length / 6) }).map((_, index) => (
-                            <a href="#job-list" key={index} onClick={(e) => { e.preventDefault(); setCurrentPage(index + 1); }}>
+                            <a  href="#job-list" key={index} onClick={(e) => { e.preventDefault(); setCurrentPage(index + 1); }}>
                                 <button className={`w-10 h-10 flex items-center justify-center border border-gray-300 rounded ${currentPage === index + 1 ? 'bg-blue-100 text-blue-500' : 'text-gray-500'}`}>{index + 1}</button>
                             </a>
                         ))}
