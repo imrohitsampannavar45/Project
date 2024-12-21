@@ -1,10 +1,20 @@
 import React from 'react'
-
+import Navbar from '../components/Navbar'   
 const Application = () => {
     return (
-        <div>
-Application
-        </div>
+      <>
+      <Navbar />
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </>
     )
 }
 
