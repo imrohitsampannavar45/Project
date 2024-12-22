@@ -17,6 +17,9 @@ const [isSearched, setIsSearched] = useState(false)
 const [jobs, setJobs] = useState([])
 
 
+const [showRecruiterLogin, setShowRecruiterLogin] = useState(false) 
+
+
 // Function to fetch the jobs data 
 const FetchJobs = async() => {
         setJobs(jobsData)
@@ -34,7 +37,9 @@ setSearchFilter,
 isSearched,
 setIsSearched,
 jobs,
-setJobs
+setJobs,
+showRecruiterLogin,
+setShowRecruiterLogin
 }
 
 return (<AppContext.Provider value={value}>
