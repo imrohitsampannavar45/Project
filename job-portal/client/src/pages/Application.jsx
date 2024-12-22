@@ -21,7 +21,7 @@ const Application = () => {
                 <input id='resumeUpload' onChange={e => setResume(e.target.files[0])} accept="application/pdf" type='file' hidden />
                 <img src={assets.profile_upload_icon} alt="" />
             </label>
-            <button className='bg-green-100 border border-green-400 rounded-lg px-4 py-2' >Save</button>
+            <button onClick={e => setIsEdit(false)} className='bg-green-100 border border-green-400 rounded-lg px-4 py-2' >Save</button>
             
             </>:
             <div className='flex gap-2'>
